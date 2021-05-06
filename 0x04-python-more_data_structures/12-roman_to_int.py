@@ -1,14 +1,14 @@
 #!/usr/bin/python3
 def roman_to_int(roman_string):
     if type(roman_string) == str:
-        numero_romano = {'I': 1, 'V': 5, 'X': 10, 'L': 50, 'C': 100, 'D': 500,'M': 1000}
+        n_r = {'I': 1, 'V': 5, 'X': 10, 'L': 50, 'C': 100, 'D': 500, 'M': 1000}
         suma = 0
         encontro = 0
         for i in range(len(roman_string)):
             if encontro:
                 encontro = 0
                 continue
-            for key in numero_romano:
+            for key in n_r:
                 if roman_string[i] == key and i != len(roman_string) - 1:
                     if roman_string[i] == 'I' and roman_string[i + 1] == 'V':
                         suma += 4
@@ -29,8 +29,8 @@ def roman_to_int(roman_string):
                         suma += 900
                         encontro = 1
                     else:
-                        suma += numero_romano[key]
+                        suma += n_r[key]
                 elif roman_string[i] == key:
-                    suma += numero_romano[key]
+                    suma += n_r[key]
         return suma
     return 0
