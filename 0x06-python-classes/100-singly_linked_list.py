@@ -2,16 +2,16 @@
 
 
 class Node:
-    """Represents a node in a singly linked list
+    """node in singly linked
     Attributes:
-        __data (int): data stored inside the node
-        __next_node (Node): next node in the linked list
+        __data (int): data
+        __next_node (Node): next node
     """
     def __init__(self, data, next_node=None):
-        """Initializes the node
+        """Initializes
         Args:
-            data (int): data stored inside the node
-            next_node (Node): next node in the linked list
+            data (int): data
+            next_node (Node): next node
         Returns:
             None
         """
@@ -20,17 +20,17 @@ class Node:
 
     @property
     def data(self):
-        """getter of __data
+        """data
         Returns:
-            data stored inside the node
+            data
         """
         return self.__data
 
     @data.setter
     def data(self, value):
-        """setter of __data
+        """data
         Args:
-            value (int): data stored insite the node
+            value (int): datastored
         Returns:
             None
         """
@@ -40,17 +40,17 @@ class Node:
 
     @property
     def next_node(self):
-        """getter of __next_node
+        """get next_node
         Returns:
-           the next node in the linked list
+           next node
         """
         return self.__next_node
 
     @next_node.setter
     def next_node(self, value):
-        """setter of __next_node
+        """__next_node
         Args:
-            value (Node): next node in the linked list
+            value (Node): next node
         Returns:
             None
         """
@@ -59,29 +59,29 @@ class Node:
         self.__next_node = value
 
     def __str__(self):
-        """String representation of Node instance
+        """String
         Returns:
-            Formatted string representing the node
+            Formatted string 
         """
         return str(self.__data)
 
 
 class SinglyLinkedList:
-    """Represents a single linked list
+    """Representer
     Attributes:
-        __head (Node): head of the linked list
+        __head (Node): head
     """
     def __init__(self):
-        """Initializes the linked list
+        """Initializer
         Returns:
             None
         """
         self.__head = None
 
     def sorted_insert(self, value):
-        """ inserts a new Node instance into the correct sorted position
+        """ new Node instance 
         Args:
-            value (int): data stored inside the new node
+            value (int): data stored
         Returns:
             None
         """
@@ -100,7 +100,7 @@ class SinglyLinkedList:
         tmp.next_node = new
 
     def __str__(self):
-        """String representation of SinglyLinkedList instance
+        """String SinglyLinkedList 
         Returns:
             Formatted string representing the linked list
         """
