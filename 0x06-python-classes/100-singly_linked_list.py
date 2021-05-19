@@ -2,49 +2,49 @@
 
 
 class Node:
-    """asdasd"""
+    """asd"""
     def __init__(self, data, next_node=None):
-        """asdasd"""
+        """asd"""
         self.data = data
         self.next_node = next_node
 
     @property
     def data(self):
-        """asdasd"""
+        """asd"""
         return self.__data
 
     @data.setter
     def data(self, value):
-        """asdasd"""
+        """asd"""
         if type(value) is not int:
             raise TypeError("data must be an integer")
         self.__data = value
 
     @property
     def next_node(self):
-        """asdasd"""
+        """asd"""
         return self.__next_node
 
     @next_node.setter
     def next_node(self, value):
-        """asdasd"""
+        """asd"""
         if value is not None and type(value) is not Node:
             raise TypeError("next_node must be a Node object")
         self.__next_node = value
 
     def __str__(self):
-        """asdasd"""
+        """asd"""
         return str(self.__data)
 
 
 class SinglyLinkedList:
-    """asdasd"""
+    """asd"""
     def __init__(self):
-        """asdasd"""
+        """asd"""
         self.__head = None
 
     def sorted_insert(self, value):
-        """asdasd"""
+        """asd"""
         new = Node(value)
         tmp = self.__head
         if tmp is None or tmp.data >= value:
@@ -60,7 +60,7 @@ class SinglyLinkedList:
         tmp.next_node = new
 
     def __str__(self):
-        """asdasd"""
+        """asd"""
         string = ""
         tmp = self.__head
         while tmp is not None:
