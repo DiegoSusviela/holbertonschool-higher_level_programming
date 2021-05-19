@@ -40,11 +40,19 @@ class Node:
 class SinglyLinkedList:
     """asd"""
     def __init__(self):
-        """asd"""
+        """Initializer
+        Returns:
+            None
+        """
         self.__head = None
 
     def sorted_insert(self, value):
-        """asd"""
+        """ new Node instance 
+        Args:
+            value (int): data stored
+        Returns:
+            None
+        """
         new = Node(value)
         tmp = self.__head
         if tmp is None or tmp.data >= value:
@@ -60,7 +68,10 @@ class SinglyLinkedList:
         tmp.next_node = new
 
     def __str__(self):
-        """asd"""
+        """String SinglyLinkedList 
+        Returns:
+            Formatted string representing the linked list
+        """
         string = ""
         tmp = self.__head
         while tmp is not None:
