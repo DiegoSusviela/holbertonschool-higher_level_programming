@@ -56,32 +56,4 @@ Traceback (most recent call last):
 ...
 TypeError: a must be an integer
 
->>> add_integer((2,), {"key": "value"})
-Traceback (most recent call last):
-...
-TypeError: a must be an integer
 
->>> add_integer(5, "1")
-Traceback (most recent call last):
-...
-TypeError: b must be an integer
-
->>> add_integer(0, False)
-Traceback (most recent call last):
-...
-TypeError: b must be an integer
-
->>> add_integer()
-Traceback (most recent call last):
-...
-TypeError: add_integer() missing 2 required positional arguments: 'a' and 'b'
-
->>> add_integer(1)
-Traceback (most recent call last):
-...
-TypeError: add_integer() missing 1 required positional argument: 'b'
-
->>> add_integer(1, 2, 3)
-Traceback (most recent call last):
-...
-TypeError: add_integer() takes 2 positional arguments but 3 were given
