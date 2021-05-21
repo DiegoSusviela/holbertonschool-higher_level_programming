@@ -2,15 +2,7 @@ Doctest to check the ``0-add_integer`` module
 ======================
 
 Importing:
-	>>> add_integer = __import__("0-add_integer").add_integer
-
->>> m = __import__("0-add_integer").__doc__
->>> len(m) > 1
-True
-
->>> f = __import__("0-add_integer").add_integer.__doc__
->>> len(f) > 1
-True
+>>> add_integer = __import__("0-add_integer").add_integer
 
 >>> add_integer(8, 3)
 11
