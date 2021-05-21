@@ -6,7 +6,7 @@ This module supplies with one function, add_integer(a, b).
 """
 
 
-def add_integer(a, b):
+def add_integer(a, b=98):
     """Returns la suma vio"""
     if type(a) is not int and type(a) is not float or a is not a:
         raise TypeError("a must be an integer")
