@@ -16,7 +16,7 @@ True
 11
 
 >>> add_integer(7, -4)
--3
+3
 
 >>> add_integer(-1, 8)
 7
