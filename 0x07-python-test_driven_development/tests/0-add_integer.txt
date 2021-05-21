@@ -12,33 +12,29 @@ True
 >>> len(f) > 1
 True
 
------------------------------------
+>>> add_integer(8, 3)
+11
 
+>>> add_integer(7, -4)
+3
 
-------------------------------------
->>> add_integer(1, float('inf'))
-Traceback (most recent call last):
-...
-OverflowError: cannot convert float infinity to integer
+>>> add_integer(-1, 8)
+7
 
->>> add_integer(1, float('nan'))
-Traceback (most recent call last):
-...
-ValueError: cannot convert float NaN to integer
+>>> [add_integer(i, i ** 2) for i in range(6)]
+[0, 2, 6, 12, 20, 30]
 
->>> add_integer(999999999999999999999999999999, 1)
-1000000000000000000000000000000
+>>> add_integer(3.3, 1)
+4
 
->>> add_integer(True, 1)
-Traceback (most recent call last):
-...
-TypeError: a must be an integer
+>>> add_integer(1, 9.8)
+10
 
->>> add_integer([2], 4)
-Traceback (most recent call last):
-...
-TypeError: a must be an integer
+>>> add_integer(6.21, 3.3)
+9
+---------------------------------
 
+----------------------------------------------
 >>> add_integer((2,), {"key": "value"})
 Traceback (most recent call last):
 ...
