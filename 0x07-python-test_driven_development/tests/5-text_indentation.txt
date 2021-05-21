@@ -62,34 +62,34 @@ Importing:
 	 Todo lo qe vivimos no lo olvidare.
 	 <BLANKLINE>
 
-         >>> text_indentation("""Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quonam modo? Utrum igitur tibi litteram videor an totas paginas commovere? Non autem hoc: igitur ne illud quidem. Fortasse id optimum, sed ubi illud: Plus semper voluptatis? Teneo, inquit, finem illi videri nihil dolere. Transfer idem ad modestiam vel temperantiam, quae est moderatio cupiditatum rationi oboediens. Si id dicis, vicimus. Inde sermone vario sex illa a Dipylo stadia confecimus. Sin aliud quid voles, postea. Quae animi affectio suum cuique tribuens atque hanc, quam dico. Utinam quidem dicerent alium alio beatiorem! Iam ruinas videres""")
-         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+         >>> text_indentation("""Ella tiene 16 y va a colegio privado. Viste ropa elegante y lleva su pelo atado? Lleva una hermosa sonrisa, una joven mirada? Unos labios rojisos, y su piel es rosada: Su pelo lleva el perfume, que lleva su piel. Lleva aroma de niña, mezclada con mujer: Su nombre es adecuado a su forma de hablar? A su carácter callado y a su sensualidad. Ella es la chica perfecta, que te puede encontrar. Con un par de palabritas, te puedes enamorar. Ella vive su vida en Montevideo, Uruguay. Estudiando una carrera pa' no tener que viajar. Yo tengo 19 y ando por ahí. Buscandome la vida pa' poder seguir""")
+         Ella tiene 16 y va a colegio privado.
          <BLANKLINE>
-         Quonam modo?
+         Viste ropa elegante y lleva su pelo atado?
          <BLANKLINE>
-         Utrum igitur tibi litteram videor an totas paginas commovere?
+         Lleva una hermosa sonrisa, una joven mirada?
          <BLANKLINE>
-         Non autem hoc:
+         Unos labios rojisos, y su piel es rosada:
          <BLANKLINE>
-         igitur ne illud quidem.
+         Su pelo lleva el perfume, que lleva su piel.
          <BLANKLINE>
-         Fortasse id optimum, sed ubi illud:
+         Lleva aroma de niña, mezclada con mujer:
          <BLANKLINE>
-         Plus semper voluptatis?
+         Su nombre es adecuado a su forma de hablar?
          <BLANKLINE>
-         Teneo, inquit, finem illi videri nihil dolere.
+         A su carácter callado y a su sensualidad.
          <BLANKLINE>
-         Transfer idem ad modestiam vel temperantiam, quae est moderatio cupiditatum rationi oboediens.
+         Ella es la chica perfecta, que te puede encontrar.
          <BLANKLINE>
-         Si id dicis, vicimus.
+         Con un par de palabritas, te puedes enamorar.
          <BLANKLINE>
-         Inde sermone vario sex illa a Dipylo stadia confecimus.
+         Ella vive su vida en Montevideo, Uruguay.
          <BLANKLINE>
-         Sin aliud quid voles, postea.
+         Estudiando una carrera pa' no tener que viajar.
          <BLANKLINE>
-         Quae animi affectio suum cuique tribuens atque hanc, quam dico.
+         Yo tengo 19 y ando por ahí.
          <BLANKLINE>
-         Utinam quidem dicerent alium alio beatiorem! Iam ruinas videres
+         Buscandome la vida pa' poder seguir
 
 	 >>> text_indentation("   Hello.  How are you?   ")
 	 Hello.
