@@ -32,7 +32,7 @@ Importing:
          ...
          TypeError: text must be a string
 
-	 >>> text_indentation("""Sal dia ma que yo muero por vos. y si no estas aqui me falta tu calor. sabes que mi corazon muere por verte? princesa entre mis brazos yo quiero tenerte: Sabes que mi amor muero por vos. y si no estas aqui me falta tu calor: sabes que mi corazon muere por verte? princesa entre mis brazos yo quiero tenerte. Mi amor yo quiero estar con vos, yo quiero estar con vos. Sabes que mi amor por ti no cambiara. princesa de mi vida por siempre seras. y no hay otra que pueda ocupar tu lugar. Quae animi affectio suum cuique tribuens atque hanc, quam dico. Todo lo qe vivimos no lo olvidare.""")
+	 >>> text_indentation("""Sal dia ma que yo muero por vos. y si no estas aqui me falta tu calor. sabes que mi corazon muere por verte? princesa entre mis brazos yo quiero tenerte: Sabes que mi amor muero por vos. y si no estas aqui me falta tu calor: sabes que mi corazon muere por verte? princesa entre mis brazos yo quiero tenerte. Mi amor yo quiero estar con vos? yo quiero estar con vos. Sabes que mi amor por ti no cambiara. princesa de mi vida por siempre seras. y no hay otra que pueda ocupar tu lugar. Todo lo qe vivimos no lo olvidare.""")
 	 Sal dia ma que yo muero por vos.
 	 <BLANKLINE> 
 	 y si no estas aqui me falta tu calor.
@@ -49,7 +49,7 @@ Importing:
 	 <BLANKLINE>
 	 princesa entre mis brazos yo quiero tenerte.
 	 <BLANKLINE>
-	 Mi amor yo quiero estar con vos.
+	 Mi amor yo quiero estar con vos?
 	 <BLANKLINE>
 	 yo quiero estar con vos.
 	 <BLANKLINE>
