@@ -32,34 +32,34 @@ Importing:
          ...
          TypeError: text must be a string
 
-	 >>> text_indentation("""Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quonam modo? Utrum igitur tibi litteram videor an totas paginas commovere? Non autem hoc: igitur ne illud quidem. Fortasse id optimum, sed ubi illud: Plus semper voluptatis? Teneo, inquit, finem illi videri nihil dolere. Transfer idem ad modestiam vel temperantiam, quae est moderatio cupiditatum rationi oboediens. Si id dicis, vicimus. Inde sermone vario sex illa a Dipylo stadia confecimus. Sin aliud quid voles, postea. Quae animi affectio suum cuique tribuens atque hanc, quam dico. Utinam quidem dicerent alium alio beatiorem! Iam ruinas videres.""")
-	 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+	 >>> text_indentation("""Sal dia ma que yo muero por vos. y si no estas aqui me falta tu calor. sabes que mi corazon muere por verte? princesa entre mis brazos yo quiero tenerte: Sabes que mi amor muero por vos. y si no estas aqui me falta tu calor: sabes que mi corazon muere por verte? princesa entre mis brazos yo quiero tenerte. Mi amor yo quiero estar con vos, yo quiero estar con vos. Sabes que mi amor por ti no cambiara. princesa de mi vida por siempre seras. y no hay otra que pueda ocupar tu lugar. Quae animi affectio suum cuique tribuens atque hanc, quam dico. Todo lo qe vivimos no lo olvidare.""")
+	 Sal dia ma que yo muero por vos.
 	 <BLANKLINE> 
-	 Quonam modo?
+	 y si no estas aqui me falta tu calor.
 	 <BLANKLINE>
-	 Utrum igitur tibi litteram videor an totas paginas commovere?
+	 sabes que mi corazon muere por verte?
 	 <BLANKLINE>
-	 Non autem hoc:
+	 princesa entre mis brazos yo quiero tenerte:
 	 <BLANKLINE>
-	 igitur ne illud quidem.
+	 Sabes que mi amor muero por vos.
 	 <BLANKLINE>
-	 Fortasse id optimum, sed ubi illud:
+	 y si no estas aqui me falta tu calor:
 	 <BLANKLINE>
-	 Plus semper voluptatis?
+	 sabes que mi corazon muere por verte?
 	 <BLANKLINE>
-	 Teneo, inquit, finem illi videri nihil dolere.
+	 princesa entre mis brazos yo quiero tenerte.
 	 <BLANKLINE>
-	 Transfer idem ad modestiam vel temperantiam, quae est moderatio cupiditatum rationi oboediens.
+	 Mi amor yo quiero estar con vos.
 	 <BLANKLINE>
-	 Si id dicis, vicimus.
+	 yo quiero estar con vos.
 	 <BLANKLINE>
-	 Inde sermone vario sex illa a Dipylo stadia confecimus.
+	 Sabes que mi amor por ti no cambiara.
 	 <BLANKLINE>
-	 Sin aliud quid voles, postea.
+	 princesa de mi vida por siempre seras.
 	 <BLANKLINE>
-	 Quae animi affectio suum cuique tribuens atque hanc, quam dico.
+	 y no hay otra que pueda ocupar tu lugar.
 	 <BLANKLINE>
-	 Utinam quidem dicerent alium alio beatiorem! Iam ruinas videres.
+	 Todo lo qe vivimos no lo olvidare.
 	 <BLANKLINE>
 
          >>> text_indentation("""Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quonam modo? Utrum igitur tibi litteram videor an totas paginas commovere? Non autem hoc: igitur ne illud quidem. Fortasse id optimum, sed ubi illud: Plus semper voluptatis? Teneo, inquit, finem illi videri nihil dolere. Transfer idem ad modestiam vel temperantiam, quae est moderatio cupiditatum rationi oboediens. Si id dicis, vicimus. Inde sermone vario sex illa a Dipylo stadia confecimus. Sin aliud quid voles, postea. Quae animi affectio suum cuique tribuens atque hanc, quam dico. Utinam quidem dicerent alium alio beatiorem! Iam ruinas videres""")
