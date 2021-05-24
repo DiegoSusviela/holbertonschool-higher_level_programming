@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 """
-As soon as at least one Exit Gate IconHelp exitGates.png is opened,
-Blood Warden activates.
+As soon as at least one Exit Gate is opened, Blood Warden activates.
 The Auras of Survivors standing within the Exit-Gate area are revealed to you.
 
 Once per Trial, hooking a Survivor while Blood Warden is active
