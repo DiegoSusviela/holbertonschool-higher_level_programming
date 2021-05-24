@@ -1,6 +1,9 @@
 #!/usr/bin/python3
-"""Defines a class Rectangle"""
+"""
+Defines omegalul class Rectangle
+"""
 
 
 class Rectangle:
-    """omegalul empty"""
+    """Empty omegalul"""
+    pass
