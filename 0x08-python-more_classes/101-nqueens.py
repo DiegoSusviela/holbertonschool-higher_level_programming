@@ -1,11 +1,8 @@
 #!/usr/bin/python3
 """
-As soon as at least one Exit Gate is opened, Blood Warden activates.
-The Auras of Survivors standing within the Exit-Gate area are revealed to you.
-
-Once per Trial, hooking a Survivor while Blood Warden is active
-calls upon The Entity IconHelp entity.png to block the exits
-for all Survivors for 30/40/60 seconds. 
+Once per Trial, hooking a Survivor while Blood
+Warden is active calls upon The Entity to block
+the exits for all Survivors for 30/40/60 seconds.
 """
 
 
@@ -27,14 +24,16 @@ if __name__ == "__main__":
     for i in range(num):
         aux.append([i, None])
 
-    def already_exists(y):
+    def existe(y):
+        """determines if wopa omegalul"""
         for x in range(num):
             if y == aux[x][1]:
                 return True
         return False
 
-    def reject(x, y):
-        if (already_exists(y)):
+    def nope(x, y):
+        """determines if wopa omegalul"""
+        if (existe(y)):
             return False
         i = 0
         while(i < x):
@@ -43,14 +42,15 @@ if __name__ == "__main__":
             i += 1
         return True
 
-    def clear_a(x):
+    def rem(x):
         for i in range(x, num):
             aux[i][1] = None
 
     def nqueens(x):
+        """determines if wopa omegalul"""
         for y in range(num):
-            clear_a(x)
-            if reject(x, y):
+            rem(x)
+            if nope(x, y):
                 aux[x][1] = y
                 if (x == num - 1):
                     print(aux)
