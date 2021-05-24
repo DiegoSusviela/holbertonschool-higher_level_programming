@@ -4,4 +4,3 @@
 
 class Rectangle:
     """omegalul empty"""
-    pass
