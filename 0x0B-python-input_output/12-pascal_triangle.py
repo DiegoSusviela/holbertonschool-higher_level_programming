@@ -3,6 +3,7 @@
 
 
 def pascal_triangle(n):
+    """omegalul epa"""
     if n <= 0:
         return []
     pascal = []
