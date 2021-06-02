@@ -1,11 +1,8 @@
 #!/usr/bin/python3
-"""defines number_of_lines"""
+"""append_write function"""
 
 
-def number_of_lines(filename=""):
+def append_write(filename="", text=""):
     """omegalul empty"""
-    with open(filename, 'r', encoding='utf-8') as file:
-        ret = 0
-        for line in file:
-            ret += 1
-        return ret
+    with open(filename, 'a', encoding='utf-8') as file:
+        return file.write(text)
