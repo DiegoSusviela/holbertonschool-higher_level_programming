@@ -8,7 +8,6 @@ class Student:
         self.last_name = last_name
         self.age = age
 
-
     def to_json(self, attrs=None):
         if type(attrs) is list and all(type(x) is str for x in attrs):
             dictionary = {}
