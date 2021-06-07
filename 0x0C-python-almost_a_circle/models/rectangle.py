@@ -4,6 +4,7 @@
 
 from models.base import Base
 
+
 class Rectangle(Base):
     def __init__(self, width, height, x=0, y=0, id=None):
         self.width = width
@@ -64,6 +65,6 @@ class Rectangle(Base):
         return self.__width * self.__height
 
     def display(self):
-        print(("\n" * self.__y) + "\n".join(((" " * self.__x)
-                                            + ("#" * self.__width))
+        print(("\n" * self.__y) + "\n".join(((" " * self.__x) +
+                                            ("#" * self.__width))
                                             for i in range(self.__height)))
