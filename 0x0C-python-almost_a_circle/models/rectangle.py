@@ -76,3 +76,27 @@ class Rectangle(Base):
                                                                 self.__width,
                                                                 self.__height)
 
+    def update(self, *args, **kwargs):
+        if len(args):
+            for i, x in enumerate(args):
+                if i == 0:
+                    self.id = x
+                elif i == 1:
+                    self.width = x
+                elif i == 2:
+                    self.height = x
+                elif i == 3:
+                    self.x = x
+                elif i == 4:
+                    self.y = x
+        else:
+            if "id" in kwargs:
+                self.id = kwargs["id"]
+            if "width" in kwargs:
+                self.width = kwargs["width"]
+            if "height" in kwargs:
+                self.height = kwargs["height"]
+            if "x" in kwargs:
+                self.x = kwargs["x"]
+            if "y" in kwargs:
+                self.y = kwargs["y"]
