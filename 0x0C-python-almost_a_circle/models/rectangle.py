@@ -68,3 +68,4 @@ class Rectangle(Base):
         print(("\n" * self.__y) + "\n".join(((" " * self.__x) +
                                             ("#" * self.__width))
                                             for i in range(self.__height)))
+
