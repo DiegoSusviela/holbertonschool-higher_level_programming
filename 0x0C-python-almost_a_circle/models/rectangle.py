@@ -6,7 +6,9 @@ from models.base import Base
 
 
 class Rectangle(Base):
+    """Base class"""
     def __init__(self, width, height, x=0, y=0, id=None):
+        """Base class"""
         self.width = width
         self.height = height
         self.x = x
@@ -15,22 +17,27 @@ class Rectangle(Base):
 
     @property
     def width(self):
+        """Base class"""
         return self.__width
 
     @property
     def height(self):
+        """Base class"""
         return self.__height
 
     @property
     def x(self):
+        """Base class"""
         return self.__x
 
     @property
     def y(self):
+        """Base class"""
         return self.__y
 
     @width.setter
     def width(self, value):
+        """Base class"""
         if type(value) is not int:
             raise TypeError("width must be an integer")
         if value <= 0:
@@ -39,6 +46,7 @@ class Rectangle(Base):
 
     @height.setter
     def height(self, value):
+        """Base class"""
         if type(value) is not int:
             raise TypeError("height must be an integer")
         if value <= 0:
@@ -47,6 +55,7 @@ class Rectangle(Base):
 
     @x.setter
     def x(self, value):
+        """Base class"""
         if type(value) is not int:
             raise TypeError("x must be an integer")
         if value < 0:
@@ -55,6 +64,7 @@ class Rectangle(Base):
 
     @y.setter
     def y(self, value):
+        """Base class"""
         if type(value) is not int:
             raise TypeError("y must be an integer")
         if value < 0:
@@ -62,14 +72,17 @@ class Rectangle(Base):
         self.__y = value
 
     def area(self):
+        """Base class"""
         return self.__width * self.__height
 
     def display(self):
+        """Base class"""
         print(("\n" * self.__y) + "\n".join(((" " * self.__x) +
                                             ("#" * self.__width))
                                             for i in range(self.__height)))
 
     def __str__(self):
+        """Base class"""
         return "[Rectangle] ({:d}) {:d}/{:d} - {:d}/{:d}".format(self.id,
                                                                  self.__x,
                                                                  self.__y,
@@ -77,6 +90,7 @@ class Rectangle(Base):
                                                                  self.__height)
 
     def update(self, *args, **kwargs):
+        """Base class"""
         if len(args):
             for i, x in enumerate(args):
                 if i == 0:
@@ -102,6 +116,7 @@ class Rectangle(Base):
                 self.y = kwargs["y"]
 
     def to_dictionary(self):
+        """Base class"""
         d = {}
         d["id"] = self.id
         d["width"] = self.width
