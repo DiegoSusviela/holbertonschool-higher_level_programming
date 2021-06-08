@@ -14,7 +14,7 @@ class Base:
         Base.__nb_objects = 0
 
     def __init__(self, id=None):
-        """Initialize"""
+        """Initialize sdnads alksdn al"""
         if id is not None:
             self.id = id
         else:
@@ -23,7 +23,7 @@ class Base:
 
     @classmethod
     def save_to_file(cls, list_objs):
-        """Initialize"""
+        """Initialize sdnads alksdn al"""
         list_dictionaries = []
         if list_objs is None:
             with open(cls.__name__ + ".json", "w",  encoding='utf-8') as file:
@@ -36,7 +36,7 @@ class Base:
 
     @classmethod
     def save_to_file_csv(cls, list_objs):
-        """Initialize"""
+        """Initialize sdnads alksdn al"""
         with open(cls.__name__ + ".csv", "w", newline='') as f:
             if cls.__name__ == "Rectangle":
                 fieldnames = ['id', 'width', 'height', 'x', 'y']
@@ -50,21 +50,21 @@ class Base:
 
     @staticmethod
     def to_json_string(list_dictionaries):
-        """Initialize"""
+        """Initialize sdnads alksdn al"""
         if list_dictionaries is None or len(list_dictionaries) is 0:
             return "[]"
         return json.dumps(list_dictionaries)
 
     @staticmethod
     def from_json_string(json_string):
-        """Initialize"""
+        """Initialize sdnads alksdn al"""
         if json_string is None:
             return []
         return json.loads(json_string)
 
     @classmethod
     def create(cls, **dictionary):
-        """Initialize"""
+        """Initialize sdnads alksdn al"""
         if cls.__name__ == "Rectangle":
             object = cls(1, 1)
             object.update(**dictionary)
@@ -77,7 +77,7 @@ class Base:
 
     @classmethod
     def load_from_file(cls):
-        """Initialize"""
+        """Initialize sdnads alksdn al"""
         if path.exists(cls.__name__ + ".json") is False:
             return []
         with open(cls.__name__ + ".json", "r",  encoding='utf-8') as file:
@@ -92,7 +92,7 @@ class Base:
 
     @classmethod
     def load_from_file_csv(cls):
-        """Initialize"""
+        """Initialize sdnads alksdn al"""
         if path.exists(cls.__name__ + ".csv") is False:
             return []
         with open(cls.__name__ + ".csv", "r", newline='') as f:
