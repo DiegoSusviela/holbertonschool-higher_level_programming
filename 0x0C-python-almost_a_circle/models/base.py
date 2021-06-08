@@ -4,16 +4,18 @@
 
 import json
 import csv
+import turtle
 
 
 class Base:
-    """Base"""
+    """Base class"""
     __nb_objects = 0
 
     def reset_objects():
         Base.__nb_objects = 0
 
     def __init__(self, id=None):
+        """Initialize"""
         if id is not None:
             self.id = id
         else:
@@ -22,6 +24,7 @@ class Base:
 
     @classmethod
     def save_to_file(cls, list_objs):
+        """Initialize"""
         list_dictionaries = []
         if list_objs is None:
             with open(cls.__name__ + ".json", "w",  encoding='utf-8') as file:
@@ -34,6 +37,7 @@ class Base:
 
     @classmethod
     def save_to_file_csv(cls, list_objs):
+        """Initialize"""
         with open(cls.__name__ + ".csv", "w", newline='') as f:
             if cls.__name__ == "Rectangle":
                 fieldnames = ['id', 'width', 'height', 'x', 'y']
@@ -47,18 +51,21 @@ class Base:
 
     @staticmethod
     def to_json_string(list_dictionaries):
+        """Initialize"""
         if list_dictionaries is None or len(list_dictionaries) is 0:
             return "[]"
         return json.dumps(list_dictionaries)
 
     @staticmethod
     def from_json_string(json_string):
+        """Initialize"""
         if json_string is None:
             return []
         return json.loads(json_string)
 
     @classmethod
     def create(cls, **dictionary):
+        """Initialize"""
         if cls.__name__ == "Rectangle":
             object = cls(1, 1)
             object.update(**dictionary)
@@ -71,6 +78,7 @@ class Base:
 
     @classmethod
     def load_from_file(cls):
+        """Initialize"""
         if path.exists(cls.__name__ + ".json") is False:
             return []
         with open(cls.__name__ + ".json", "r",  encoding='utf-8') as file:
@@ -85,6 +93,7 @@ class Base:
 
     @classmethod
     def load_from_file_csv(cls):
+        """Initialize"""
         if path.exists(cls.__name__ + ".csv") is False:
             return []
         with open(cls.__name__ + ".csv", "r", newline='') as f:
