@@ -6,24 +6,30 @@ from models.rectangle import Rectangle
 
 
 class Square(Rectangle):
+    """Base class"""
     def __init__(self, size, x=0, y=0, id=None):
+        """Base class"""
         super().__init__(size, size, x, y, id)
         self.size = size
 
     @property
     def size(self):
+        """Base class"""
         return self.width
 
     @size.setter
     def size(self, value):
+        """Base class"""
         self.width = value
         self.height = value
 
     def __str__(self):
+        """Base class"""
         return "[Square] ({:d}) {:d}/{:d} - {:d}".format(self.id, self.x,
                                                          self.y, self.width)
 
     def update(self, *args, **kwargs):
+        """Base class"""
         if len(args):
             for i, a in enumerate(args):
                 if i == 0:
@@ -45,6 +51,7 @@ class Square(Rectangle):
                 self.y = kwargs["y"]
 
     def to_dictionary(self):
+        """Base class"""
         d = {}
         d["id"] = self.id
         d["size"] = self.size
