@@ -224,13 +224,6 @@ class TestBaseClass(unittest.TestCase):
         s1.update(1, 2, 3, 4, id=10)
         self.assertEqual(s1.id, 1)
 
-    def test_updatebadsizevalue(self):
-        """a cagar"""
-        Square.reset_objects()
-        r1 = Square(1, 2, 3, 4)
-        r1.update(1, "foo")
-        self.assertEqual(r1.size, 1)
-
     def test_updatebadxvalue(self):
         """a cagar"""
         Square.reset_objects()
@@ -244,16 +237,6 @@ class TestBaseClass(unittest.TestCase):
         r1 = Square(1, 2, 3, 4)
         r1.update(1, 2, 3, "foo")
         self.assertEqual(r1.y, 3)
-
-    def test_updateallbadvalues(self):
-        """a cagar"""
-        Square.reset_objects()
-        r1 = Square(1, 2, 3, 4)
-        r1.update([1], (9, ), True, "foo")
-        self.assertEqual(r1.size, 1)
-        self.assertEqual(r1.x, 2)
-        self.assertEqual(r1.y, 3)
-        self.assertEqual(r1.id, 4)
 
     def test_to_dict(self):
         """a cagar"""
