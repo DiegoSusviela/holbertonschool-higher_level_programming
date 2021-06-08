@@ -224,20 +224,6 @@ class TestBaseClass(unittest.TestCase):
         s1.update(1, 2, 3, 4, id=10)
         self.assertEqual(s1.id, 1)
 
-    def test_updatebadxvalue(self):
-        """a cagar"""
-        Square.reset_objects()
-        r1 = Square(1, 2, 3, 4)
-        r1.update(1, 2, "foo")
-        self.assertEqual(r1.x, 2)
-
-    def test_updatebadyvalue(self):
-        """a cagar"""
-        Square.reset_objects()
-        r1 = Square(1, 2, 3, 4)
-        r1.update(1, 2, 3, "foo")
-        self.assertEqual(r1.y, 3)
-
     def test_to_dict(self):
         """a cagar"""
         Square.reset_objects()
