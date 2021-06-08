@@ -6,6 +6,7 @@ import json
 import csv
 from os import path
 
+
 class Base:
     """Base class"""
     __nb_objects = 0
