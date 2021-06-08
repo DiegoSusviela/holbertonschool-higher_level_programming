@@ -11,6 +11,7 @@ class Base:
     __nb_objects = 0
 
     def reset_objects():
+        """Initialize sdnads alksdn al"""
         Base.__nb_objects = 0
 
     def __init__(self, id=None):
