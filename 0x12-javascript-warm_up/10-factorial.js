@@ -1,6 +1,6 @@
 #!/usr/bin/node
 function factorial (x) {
-  const number = parseInt(a);
+  const number = parseInt(x);
   if (isNaN(number) || x === 1) {
     return 1;
   }
