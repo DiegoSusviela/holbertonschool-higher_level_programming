@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """alibaba y los 40 ladrones"""
-import urllib
+import urllib.request
 from sys import argv
 
 if __name__ == "__main__":
