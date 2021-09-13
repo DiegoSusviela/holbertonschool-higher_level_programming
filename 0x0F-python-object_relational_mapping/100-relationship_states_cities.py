@@ -14,8 +14,8 @@ if __name__ == "__main__":
                                                                     argv[2],
                                                                     argv[3]))
     Base.metadata.create_all(eng)
-    a = sessionmaker(bind=eng)
-    a = a()
+    A = sessionmaker(bind=eng)
+    a = A()
     b = State(name="California")
     b.cities = [City(name="San Francisco")]
     a.add(b)
