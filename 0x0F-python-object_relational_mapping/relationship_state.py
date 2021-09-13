@@ -1,7 +1,7 @@
 #!/usr/bin/python3"""a wopas asd"""
 """a wopas asd"""
 
-
+import sqlalchemy
 from sqlalchemy import Column, Integer, String
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import relationship
