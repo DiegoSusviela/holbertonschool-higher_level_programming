@@ -1,20 +1,21 @@
 #!/usr/bin/node
 const request = require('request');
-request(process.argv[2], function (err, response, body) {
-  if (err) throw err;
-  if (response.statusCode === 200) {
-    let com = {};
-    let tas = JSON.parse(body);
-    for (let i in tas) {
-      let task = tas[i];
-      if (task.com === true) {
-        if (com[task.userId] === undefined)
-          com[task.userId] = 1;
-        else
-          com[task.userId]++;
+const resdic = { json: true };
+const results = {};
+request(process.argv[2], resdic, (error, res, body) => {
+  if (error) {
+    return console.log(error);
+  }
+  if (!error && res.statusCode === 200) {
+    body.forEach(tasks => {
+      if (tasks.completed) {
+        if (!results[tasks.userId]) {
+          results[tasks.userId] = 1;
+        } else {
+          results[tasks.userId] += 1;
+        }
       }
-    }
-    console.log(com);
-  } else
-    console.log('An error occured. Status code: ' + response.statusCode);
+    });
+    console.log(results);
+  }
 });
