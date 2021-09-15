@@ -1,10 +1,8 @@
 #!/usr/bin/node
-const request = require('request');
-let text;
-request(process.argv[2], function (error, response, body) {
+const req = require('request');
+req.get(process.argv[2], function (error, response) {
   if (err) throw err;
-  text = body;
-  require('fs').writeFile(process.argv[3], text, 'utf-8', (err) => {
+  require('fs').appendFile(process.argv[3], response.body, function (err) {
     if (err) throw err;
   });
 });
