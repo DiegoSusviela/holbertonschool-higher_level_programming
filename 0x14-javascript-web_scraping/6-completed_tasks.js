@@ -1,21 +1,20 @@
 #!/usr/bin/node
 const request = require('request');
-let lis = [];
-let pos1 = 0;
-const dic = {};
-let clave = '';
-
-request(process.argv[2], function (error, response, body) {
+request(process.argv[2], function (err, response, body) {
   if (err) throw err;
-  lis = JSON.parse(body);
-  for (pos1 = 0; pos1 < lis.length; pos1++) {
-    clave = lis[pos1].userId;
-    if (lis[pos1].completed === true) {
-    if (!dic[clave]) 
-      dic[clave] = 1;
-    else
-      dic[clave] += 1;
+  if (response.statusCode === 200) {
+    let com = {};
+    let tas = JSON.parse(body);
+    for (let i in tas) {
+      let task = tas[i];
+      if (task.com === true) {
+        if (com[task.userId] === undefined)
+          com[task.userId] = 1;
+        else
+          com[task.userId]++;
+      }
     }
-    console.log(dic);
-  }
+    console.log(com);
+  } else
+    console.log('An error occured. Status code: ' + response.statusCode);
 });
